@@ -1,6 +1,6 @@
-# Build react component - v.1
+# ReactJS components builder
 
-Interactive menu for building ReactJS components.
+Interactive menu (terminal application) to facilitate the components construction.
 
 ### Requirements
 
