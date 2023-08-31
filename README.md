@@ -28,6 +28,12 @@ Interactive menu for building ReactJS components.
    node ./src/index.js ./src
    ```
 
+### Screenshots
+
+![App screenshot](/screenshots/01.jpg "Screenshot 1")
+
+![App screenshot](/screenshots/02.jpg "Screenshot 1")
+
 ### TODO
 
 1. Review the code
