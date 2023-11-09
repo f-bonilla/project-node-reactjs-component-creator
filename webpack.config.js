@@ -15,14 +15,14 @@ class AddCommentsPlugin {
       (compilation, callback) => {
         const buildFilePath = path.resolve(
           __dirname,
-          "dist/build-component.min.js"
+          "dist/build-component.min.cjs"
         );
         const buildFileContent =
-          compilation.assets["build-component.min.js"].source();
+          compilation.assets["build-component.min.cjs"].source();
         const updatedContent =
           helpComment + buildFileContent.replace(/^\s+/, "");
 
-        compilation.assets["build-component.min.js"] = new RawSource(
+        compilation.assets["build-component.min.cjs"] = new RawSource(
           updatedContent
         );
 
@@ -36,7 +36,7 @@ module.exports = {
   mode: "production",
   entry: "./src/index.js",
   output: {
-    filename: "build-component.min.js",
+    filename: "build-component.min.cjs",
     path: path.resolve(__dirname, "dist"),
   },
   target: "node",
